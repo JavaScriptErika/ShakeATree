@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Animated } from 'react-native';
+import Tree from './src/Tree/Tree'
+import FadeInView from './src/animations/FadeInView';
 
 export default function App() {
+  
   return (
+    <>
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Tree />
     </View>
+    <View style={styles.grassContainer}></View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    paddingTop: 90,
+    flex: 3,
+    backgroundColor: '#e6fdff',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  grassContainer: {
+    flex: 1,
+    backgroundColor: "#72a742"
+  }
 });
