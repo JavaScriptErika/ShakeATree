@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import Svg, {Path} from 'react-native-svg'
+import Svg, {Path } from 'react-native-svg'
 import { leafData } from './leafData';
 import LeafShakeView from '../animations/LeafShakeView';
 
