@@ -1,1 +1,1 @@
-export {default as Tree} from './Tree/Tree'
+export {default as TreeScene} from './Tree/TreeScene'

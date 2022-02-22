@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {Tree} from './src'
+import {TreeScene} from './src'
 
 import { StyleSheet, Text, View, Animated } from 'react-native';
 // import Tree from './src/Tree/Tree'
@@ -17,7 +17,7 @@ const Stack = createNativeStackNavigator();
     <>
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Tree" component={Tree}/>
+        <Stack.Screen name="Tree" component={TreeScene} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
     {/* <LinearGradient colors={['#ffeeea', '#ffeeea', '#ffbbac']} style={styles.container}>
