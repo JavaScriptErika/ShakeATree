@@ -52,19 +52,22 @@ After my interview with David and Rob, a question was asked about how I'd go abo
 - Each fact is placed in an array of objects that has `quote`, `favorited`, and `id` keys! 
 - I placed the array of objects inside of state so we can keep track of the changes -- because I wanted the heart state to persist if it was viewed again. 
 - I pass down the currentFact to the FavoriteIcon and pass down the opposite of what that `favorited` property is currently. So if the icon was not hearted (false) by looking into the value, we want it to now be opposite of that.  
-- The value makes its way back up to the parent where state is updated for the heart and array.
+- The value makes its way back up to the parent where state is updated for the heart and array (made a shallow copy before updating state!!).
 - From there, I can take that array and filter a list of the favorited facts!
 
 ![Capture](https://user-images.githubusercontent.com/19316487/155417874-97e2a896-03db-45cc-87be-5c8a04dcc0d4.JPG)
 
 ________________________
 
-# Overall Thoughts
+# 🏕️ Overall Thoughts 🏕️
 
 I had a lot of fun making this app and I am loving mobile app development! I learned quite a bit from building Shake a Tree! I will say, React Native animation is quite intense and no joke -- but I love a good challenge and this is why I am a developer -- to solve problems and come up with fun solutions. No one will understand the true joy it is to have a leaf move on tap, haha!! As I built this app and dug even more into TreeCard, I am inspired by TreeCard's mission; I can't think of a better way than to pour my talents into a company that invests itself into making the world a better place. Thank you SO much for your time! 
 
-### Additional Features that would be Cool 
+### 🍄 Additional Features that would be Cool 🍄
 (I just ran out of time!)
 - Use physical device shaking for tree animation
+- After X amount of taps, have a leaf or 2 fall
 - Vibrate phone on tree tap
+- Change background gradient based on time
+- Place favorites into local storage
 - Favorites list view - slide/gesture or long press to remove favorited fact
