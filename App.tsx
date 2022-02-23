@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Tree" component={TreeScene} options={{headerShown: false}}/>
-          <Stack.Screen name="Your Favorites" component={SeeFavorites} />
+          <Stack.Screen name="SeeFavorites" component={SeeFavorites} />
         </Stack.Navigator>
       </NavigationContainer>
   );

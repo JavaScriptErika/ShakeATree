@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
-import { StyleSheet, Text, ScrollView, View, FlatList } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import {RootStackProps} from '../client'
 
-const SeeFavorites = ({route}) => {
+const SeeFavorites = ({route}:RootStackProps) => {
 
     const {treeCardFacts} = route.params
 

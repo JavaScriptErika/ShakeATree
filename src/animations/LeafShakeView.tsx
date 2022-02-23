@@ -1,12 +1,13 @@
 import React, {useRef, useEffect} from 'react';
 import { Animated, Easing } from 'react-native';
 import {Path} from 'react-native-svg'
+import {LeafShakeViewProps} from '../client'
 
-const LeafShakeView = (props) => {
+const LeafShakeView = ({d, fill, randomNumber}:LeafShakeViewProps) => {
 
   const isMounted = useRef(false)
   let shakeValue =  useRef(new Animated.Value(0)).current;
-  const AnimatedPath = Animated.createAnimatedComponent(Path)
+  const AnimatedPath = Animated.createAnimatedComponent<any>(Path)
 
   const min = 0
   const max = 130
@@ -50,17 +51,16 @@ const LeafShakeView = (props) => {
 
     useEffect(() => {
       isMounted.current ? onPressShake() : isMounted.current = true
-    }, [props.randomNumber]);
+    }, [randomNumber]);
 
 
   return (
-    <AnimatedPath  
+    <AnimatedPath 
       style={{
-        ...props.style,
-        transform: [{translateX: shake}, {perspective: 1000}], 
-      }}
-      d={props.d}
-      fill={props.fill}
+        transform: [{translateX: shake}], 
+      }} 
+      d={d}
+      fill={fill}
     />
   );
 }

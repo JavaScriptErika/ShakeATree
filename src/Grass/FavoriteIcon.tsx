@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import {FavoriteIconProps} from '../client'
 
 
-const FavoriteIcon = ({heading, randomNumber, treeCardFacts, onIsFavoritedHandler, isFavorited}) => {
+const FavoriteIcon = ({heading, randomNumber, treeCardFacts, onIsFavoritedHandler, isFavorited}: FavoriteIconProps) => {
 
     let currentFact = treeCardFacts.filter((fact, index) => index === randomNumber)
  

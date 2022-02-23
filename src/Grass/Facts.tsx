@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, ScrollView } from 'react-native';
+import {FactProps} from '../client'
 
-const Facts = ({randomNumber, treeCardFacts}) => {
+const Facts = ({randomNumber, treeCardFacts}:FactProps) => {
 
     return (
         <>

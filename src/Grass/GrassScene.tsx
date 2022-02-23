@@ -2,10 +2,10 @@ import React from 'react';
 import { StyleSheet, View, Button } from 'react-native';
 import FavoriteIcon from './FavoriteIcon';
 import Facts from './Facts';
-import { useLinkProps } from '@react-navigation/native';
+import {GrassSceneProps} from '../client'
 
 
-const GrassScene = ({randomNumber, treeCardFacts, onIsFavoritedHandler, isFavorited, children}) => {
+const GrassScene = ({randomNumber, treeCardFacts, onIsFavoritedHandler, isFavorited, children}: GrassSceneProps) => {
     return (
         <>
             <View style={styles.mainContainer}>

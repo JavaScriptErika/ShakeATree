@@ -3,8 +3,9 @@ import TreeSvg from './TreeSvg';
 import GrassScene from '../Grass/GrassScene';
 import { data } from '../Grass/treeCardData';
 import { View, Button, StyleSheet } from 'react-native';
+import {RootStackProps} from '../client'
 
-const TreeScene = ({navigation, route}) => {
+const TreeScene = ({navigation}:RootStackProps) => {
 
     const [randomNumber, setrandomNumber] = useState(0);
     const [treeCardFacts, setTreeCardFacts] = useState(data);
@@ -16,7 +17,7 @@ const TreeScene = ({navigation, route}) => {
         setIsFavorited(treeCardFacts[randomIndex].favorited)
     }
 
-    const onIsFavoritedHandler = (isHearted) => {
+    const onIsFavoritedHandler = (isHearted:boolean) => {
       setIsFavorited(() => isHearted)
       const favoritedFacts = [...treeCardFacts]
       favoritedFacts[randomNumber] = {...favoritedFacts[randomNumber], favorited: isHearted}
@@ -38,12 +39,10 @@ const TreeScene = ({navigation, route}) => {
           isFavorited={isFavorited} 
         >
           <View style={styles.buttonContainer}> 
-            <Button color="#33BC84" title='See Favorites' onPress={() => navigation.navigate('Your Favorites', {treeCardFacts})}/>
+            <Button color="#33BC84" title='See Favorites' onPress={() => navigation.navigate('SeeFavorites', {treeCardFacts})}/>
           </View>
           
         </GrassScene>
-
-
 
       </>
     )

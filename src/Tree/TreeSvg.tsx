@@ -4,8 +4,9 @@ import Svg, {Path} from 'react-native-svg'
 import { LinearGradient } from "expo-linear-gradient";
 import { leafData } from './leafData';
 import LeafShakeView from '../animations/LeafShakeView';
+import {TreeSvgProps} from '../client'
 
-const TreeSvg = ({onPressTreeHandler, randomNumber}) => {
+const TreeSvg = ({onPressTreeHandler, randomNumber}:TreeSvgProps) => {
 
     return ( 
         <LinearGradient colors={['#ffeeea', '#ffeeea', '#ffbbac']} style={styles.container}> 
