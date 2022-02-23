@@ -1,15 +1,15 @@
-import React, { useState} from 'react';
-import { StyleSheet, Text, View, Animated, ScrollView } from 'react-native';
-import FavoriteIcon from './FavoriteIcon';
+import React from 'react';
+import { StyleSheet, Text, ScrollView } from 'react-native';
 
+const Facts = ({randomNumber, treeCardFacts}) => {
 
-const Facts = () => {
     return (
         <>
-            <ScrollView>
-                <Text>“Maybe, just to play a little, we'll put a little tree here. If you didn't have baby clouds, you wouldn't have big clouds. A beautiful little sunset.”</Text>
+            <ScrollView style={styles.container}>
+                <Text style={styles.quote}>
+                    {treeCardFacts[randomNumber].quote}
+                </Text>
             </ScrollView>
-            
         </>
     )
 }
@@ -18,15 +18,18 @@ export default Facts
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row',
-        flex: 2,
-        backgroundColor: '#105157',
-        justifyContent: 'space-around',
-        paddingTop: 15,
+        paddingTop: 20,
+        paddingHorizontal: 20,
+        alignSelf: 'stretch',
     },
-    heading : {
+    quote : {
         color: '#fff4df',
-        fontSize: 20,
+        fontSize: 22,
+        padding: 9,
+        paddingBottom: 30,
+        borderRadius: 7,
+        backgroundColor: "#093135"
+
     },
     icon : {
         color: '#fff4df',

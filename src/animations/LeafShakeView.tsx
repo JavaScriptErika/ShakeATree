@@ -8,7 +8,7 @@ const LeafShakeView = (props) => {
   let shakeValue =  useRef(new Animated.Value(0)).current;
   const AnimatedPath = Animated.createAnimatedComponent(Path)
 
-  const min = 100
+  const min = 0
   const max = 130
   const randomDelay = Math.floor(Math.random() * (max - min + 1) + min);
 
@@ -50,7 +50,7 @@ const LeafShakeView = (props) => {
 
     useEffect(() => {
       isMounted.current ? onPressShake() : isMounted.current = true
-    }, [props.treeTap]);
+    }, [props.randomNumber]);
 
 
   return (

@@ -1,15 +1,27 @@
-import React, { useState} from 'react';
-import { StyleSheet, Text, View, Animated } from 'react-native';
+import React from 'react';
+import { StyleSheet, View, Button } from 'react-native';
 import FavoriteIcon from './FavoriteIcon';
 import Facts from './Facts';
+import { useLinkProps } from '@react-navigation/native';
 
 
-const GrassScene = () => {
+const GrassScene = ({randomNumber, treeCardFacts, onIsFavoritedHandler, isFavorited, children}) => {
     return (
         <>
             <View style={styles.mainContainer}>
-                <FavoriteIcon heading="Tap the tree for TreeCard facts &amp; save your favorites" />
-                <Facts />
+                <FavoriteIcon 
+                    randomNumber={randomNumber} 
+                    treeCardFacts={treeCardFacts}
+                    onIsFavoritedHandler={onIsFavoritedHandler}  
+                    isFavorited={isFavorited}
+                    heading="Tap the tree for TreeCard facts &amp; save your favorites" 
+                />
+
+                <Facts 
+                    randomNumber={randomNumber} 
+                    treeCardFacts={treeCardFacts} 
+                />
+                {children}
             </View>
            
         </>
