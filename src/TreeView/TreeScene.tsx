@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import TreeSvg from './TreeSvg';
-import GrassScene from '../Grass/GrassScene';
-import { data } from '../Grass/treeCardData';
+import TreeSvg from './Tree/TreeSvg';
+import GrassScene from './Grass/GrassScene';
+import { data } from '../data/treeCardData';
 import { View, Button, StyleSheet } from 'react-native';
 import {RootStackProps} from '../client'
 

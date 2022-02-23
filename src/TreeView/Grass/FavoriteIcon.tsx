@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import {FavoriteIconProps} from '../client'
+import {FavoriteIconProps} from '../../client'
 
 
 const FavoriteIcon = ({heading, randomNumber, treeCardFacts, onIsFavoritedHandler, isFavorited}: FavoriteIconProps) => {

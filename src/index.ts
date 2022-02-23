@@ -1,2 +1,2 @@
-export {default as TreeScene} from './Tree/TreeScene'
-export {default as SeeFavorites} from './Grass/SeeFavorites'
+export {default as TreeScene} from './TreeView/TreeScene'
+export {default as SeeFavorites} from './FavoritesView/SeeFavorites'

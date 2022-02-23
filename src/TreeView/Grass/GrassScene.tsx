@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Button } from 'react-native';
 import FavoriteIcon from './FavoriteIcon';
 import Facts from './Facts';
-import {GrassSceneProps} from '../client'
+import {GrassSceneProps} from '../../client'
 
 
 const GrassScene = ({randomNumber, treeCardFacts, onIsFavoritedHandler, isFavorited, children}: GrassSceneProps) => {

@@ -2,9 +2,9 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import Svg, {Path} from 'react-native-svg'
 import { LinearGradient } from "expo-linear-gradient";
-import { leafData } from './leafData';
-import LeafShakeView from '../animations/LeafShakeView';
-import {TreeSvgProps} from '../client'
+import { leafData } from '../../data/leafData';
+import LeafShakeView from '../../animations/LeafShakeView';
+import {TreeSvgProps} from '../../client'
 
 const TreeSvg = ({onPressTreeHandler, randomNumber}:TreeSvgProps) => {
 
