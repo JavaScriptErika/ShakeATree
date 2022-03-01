@@ -1,5 +1,5 @@
 # 🌲 Shake A Tree 🌲
-### Shake a tree! Get random facts from [TreeCard](https://www.treecard.org/) 🌲💳
+### Shake a tree! Get random facts from [Treecard](https://www.treecard.org/) 🌲💳
 React Native App made with 💚 & Expo. 
 
 ### How to View
@@ -13,11 +13,11 @@ _Disclaimer: This project has only been tested in an Android setting_ 📱
 ## 🌄 Highlights 🌄
 - Tap the tree and the individual leaves shake and generate a new fact
 - Tapped facts are generated randomly
-- TreeCard facts can be favorited and unfavorited. The heart state persists with each fact.
+- Treecard facts can be favorited and unfavorited. The heart state persists with each fact.
 - Facts favorited generates a list on the "See Favorites" screen
 
 # 🦌 The Process 🦌
-I was inspired by TreeCard to create an app to further my knowledge in React Native as well as create a fun little app that compliments their branding and mission while educating the user about the company. 
+I was inspired by Treecard to create an app to further my knowledge in React Native as well as create a fun little app that compliments their branding and mission while educating the user about the company. 
 
 Once I got my initial layout done in code, I used Figma to help me visualize my components, facts, and button placement.
 
@@ -31,7 +31,7 @@ ________________________
 ![Capture](https://user-images.githubusercontent.com/19316487/155416758-7c504778-b14d-4a56-bc1a-d191a42bd4d7.JPG)
 
 The tree originated from Pixabay and got replanted into this app. 
-I changed the colors in illustrator to match the beautiful branding of TreeCard. 
+I changed the colors in illustrator to match the beautiful branding of Treecard. 
 
 The challenge was being able to animate the leaves individually and not as a whole so it looked more natural if you were to shake a tree!
 
@@ -61,7 +61,7 @@ ________________________
 
 # 🏕️ Overall Thoughts 🏕️
 
-I had a lot of fun making this app and I am loving mobile app development! I learned quite a bit from building Shake a Tree! I will say, React Native animation is quite intense and no joke -- but I love a good challenge and this is why I am a developer -- to solve problems and come up with fun solutions. No one will understand the true joy it is to have a leaf move on tap, haha!! As I built this app and dug even more into TreeCard, I am inspired by TreeCard's mission; I can't think of a better way than to pour my talents into a company that invests itself into making the world a better place. Thank you SO much for your time! 
+I had a lot of fun making this app and I am loving mobile app development! I learned quite a bit from building Shake a Tree! I will say, React Native animation is quite intense and no joke -- but I love a good challenge and this is why I am a developer -- to solve problems and come up with fun solutions. No one will understand the true joy it is to have a leaf move on tap, haha!! As I built this app and dug even more into Treecard, I am inspired by Treecard's mission; I can't think of a better way than to pour my talents into a company that invests itself into making the world a better place. Thank you SO much for your time! 
 
 ### 🍄 Additional Features that would be Cool 🍄
 (I just ran out of time!)
