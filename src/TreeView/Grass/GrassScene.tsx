@@ -14,7 +14,7 @@ const GrassScene = ({randomNumber, treeCardFacts, onIsFavoritedHandler, isFavori
                     treeCardFacts={treeCardFacts}
                     onIsFavoritedHandler={onIsFavoritedHandler}  
                     isFavorited={isFavorited}
-                    heading="Tap the tree for TreeCard facts &amp; save your favorites" 
+                    heading="Tap the tree for Treecard facts &amp; save your favorites" 
                 />
 
                 <Facts 
