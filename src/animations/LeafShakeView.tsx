@@ -1,9 +1,11 @@
-import React, {useRef, useEffect} from 'react';
+import { DeviceMotion } from 'expo-sensors';
+import React, {useRef, useEffect, useState} from 'react';
 import { Animated, Easing } from 'react-native';
 import {Path} from 'react-native-svg'
 import {LeafShakeViewProps} from '../client'
 
 const LeafShakeView = ({d, fill, randomNumber}:LeafShakeViewProps) => {
+  const [rotationDirection, setRotationDirection] = useState<'clockwise' | 'counter'>()
 
   const isMounted = useRef(false)
   let shakeValue =  useRef(new Animated.Value(0)).current;
@@ -50,9 +52,31 @@ const LeafShakeView = ({d, fill, randomNumber}:LeafShakeViewProps) => {
     })
 
     useEffect(() => {
-      isMounted.current ? onPressShake() : isMounted.current = true
+      if (!isMounted.current) isMounted.current = true;
+
+      onPressShake();
     }, [randomNumber]);
 
+    useEffect(() => {
+      const subscription = DeviceMotion.addListener(({ rotationRate }) => {
+        const { gamma } = rotationRate || {};
+        if (!gamma) return;
+  
+        if (gamma > 0 && rotationDirection !== 'counter') {
+          setRotationDirection('counter');
+          onPressShake();
+          return;
+        }
+        
+        if (gamma < 0 && rotationDirection !== 'clockwise') {
+          setRotationDirection('clockwise');
+          onPressShake();
+          return;
+        }
+      });
+  
+      return subscription.remove;
+    }, [rotationDirection, setRotationDirection, onPressShake]);
 
   return (
     <AnimatedPath 

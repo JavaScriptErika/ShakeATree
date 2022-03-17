@@ -5,8 +5,7 @@ import { data } from '../data/treeCardData';
 import { View, Button, StyleSheet } from 'react-native';
 import {RootStackProps} from '../client'
 
-const TreeScene = ({navigation}:RootStackProps) => {
-
+const TreeScene = ({navigation}: RootStackProps) => {
     const [randomNumber, setrandomNumber] = useState(0);
     const [treeCardFacts, setTreeCardFacts] = useState(data);
     const [isFavorited, setIsFavorited] = useState(false);
@@ -22,13 +21,13 @@ const TreeScene = ({navigation}:RootStackProps) => {
       const favoritedFacts = [...treeCardFacts]
       favoritedFacts[randomNumber] = {...favoritedFacts[randomNumber], favorited: isHearted}
       setTreeCardFacts(favoritedFacts)
-  }
+    }
 
     return (  
       <>
 
         <TreeSvg 
-          onPressTreeHandler={onPressTreeHandler} 
+          onPressTreeHandler={onPressTreeHandler}
           randomNumber={randomNumber} 
         />
 
