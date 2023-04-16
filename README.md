@@ -45,7 +45,6 @@ Using the [Animated](https://reactnative.dev/docs/animated) library -
 ________________________
 
 ### 🤍 Favorited Facts 🤍 ###
-After my interview with David and Rob, a question was asked about how I'd go about saving a favorited item locally. We discussed placing items in an object of arrays - so I did just that. 
 
 ![Capture](https://user-images.githubusercontent.com/19316487/155417166-f22eca13-4e8a-4af0-8a16-44b0cbf076d7.JPG)
 
@@ -61,7 +60,7 @@ ________________________
 
 # 🏕️ Overall Thoughts 🏕️
 
-I had a lot of fun making this app and I am loving mobile app development! I learned quite a bit from building Shake a Tree! I will say, React Native animation is quite intense and no joke -- but I love a good challenge and this is why I am a developer -- to solve problems and come up with fun solutions. No one will understand the true joy it is to have a leaf move on tap, haha!! As I built this app and dug even more into Treecard, I am inspired by Treecard's mission; I can't think of a better way than to pour my talents into a company that invests itself into making the world a better place. Thank you SO much for your time! 
+I had a lot of fun making this app and I am loving mobile app development! I learned quite a bit from building Shake a Tree! I will say, React Native animation is quite intense and no joke -- but I love a good challenge and this is why I am a developer -- to solve problems and come up with fun solutions. No one will understand the true joy it is to have a leaf move on tap, haha!
 
 ### 🍄 Additional Features that would be Cool 🍄
 (I just ran out of time!)
